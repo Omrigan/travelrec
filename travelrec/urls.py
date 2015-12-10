@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^random/', views.getRandomUser),
     url(r'^dist/(?P<pk>[0-9]+)/', views.getTopByCurLocation),
-    url(r'^tags/(?P<pk>[0-9]+)/', views.getTagsForText)
+    url(r'^tags/(?P<pk>[0-9]+)/', views.getTagsForText),
+    url(r'^parse/', views.parseData)
 
 ]

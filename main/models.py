@@ -66,8 +66,8 @@ class TMessages(models.Model):
 
 class TNotes(models.Model):
     user_id = models.IntegerField()
-    text = models.CharField(max_length=920)
-    title = models.CharField(max_length=50)
+    text = models.CharField(max_length=10000)
+    title = models.CharField(max_length=400)
     latitude = models.FloatField()
     longitude = models.FloatField()
     vk = models.IntegerField()
