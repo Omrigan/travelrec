@@ -4,7 +4,6 @@ from . import models
 from . import serializers
 import random, requests, time
 from geopy.distance import vincenty
-
 from stop_words import get_stop_words
 from nltk.stem.snowball import RussianStemmer
 from nltk.tokenize import RegexpTokenizer
@@ -24,7 +23,6 @@ def parseData(req):
     for i in range(0,30):
         print(i)
         r = requests.get("https://api.vk.com/method/wall.get?domain=the.puzzle.ofworld&count=" + str(step )+ "&offset=" + str(i*step))
-        a = random.random()
         b = random.random()*180
         a=random.random()*180
         if random.random()>0.8:
